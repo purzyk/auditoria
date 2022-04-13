@@ -1,0 +1,27 @@
+.logotypes {
+  max-width: 1920px;
+  overflow: hidden;
+  padding-bottom: 130px;
+  margin: 0 auto;
+  &__title {
+    padding-bottom: 85px;
+  }
+  .slick-track {
+    display: flex !important;
+  }
+
+  .slick-slide {
+    height: inherit !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &__carousel {
+    figure {
+      text-align: center;
+      img {
+        margin: 0 auto;
+      }
+    }
+  }
+}

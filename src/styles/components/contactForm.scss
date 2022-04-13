@@ -1,0 +1,55 @@
+.contactForm {
+  padding-bottom: 100px;
+  select::-ms-expand {
+    display: none;
+  }
+  select {
+    display: inline-block;
+    box-sizing: border-box;
+    padding: 0.5em 2em 0.5em 0.5em;
+    border: 1px solid #eee;
+    font: inherit;
+    line-height: inherit;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    appearance: none;
+    background-repeat: no-repeat;
+    background-image: url('../images/select.svg');
+    background-position: left 150px center;
+  }
+  &__form {
+    max-width: 820px;
+    margin: 0 auto;
+    input,
+    textarea,
+    select {
+      border: 2px solid #e4a000;
+      width: 100%;
+      padding: 22px;
+      background-color: $black;
+      margin-bottom: 18px;
+      font-size: 1.5rem;
+      line-height: 1.8rem;
+      color: #707070;
+      font-family: 'Gilroy';
+      font-weight: 500;
+      &::placeholder {
+        font-size: 1.5rem;
+        line-height: 1.8rem;
+        color: #707070;
+        font-family: 'Gilroy';
+        font-weight: 500;
+      }
+    }
+    .btn {
+      font-size: 1.8rem;
+      font-weight: 700;
+      top: 31px;
+      min-width: 230px;
+    }
+  }
+  &__title {
+    margin-bottom: 30px;
+  }
+}

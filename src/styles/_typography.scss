@@ -1,0 +1,83 @@
+/* Typography */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+@font-face {
+  font-family: 'Gilroy';
+  src: url('../fonts/Gilroy-Medium.woff');
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: 'Gilroy';
+  src: url('../fonts/Gilroy-Bold.woff');
+  font-weight: 700;
+}
+
+body {
+  font-family: 'Gilroy', sans-serif;
+  font-weight: 500;
+  line-height: 1.4;
+  color: $light;
+}
+p {
+  font-size: 2rem;
+  line-height: 2.8rem;
+}
+
+a {
+  text-decoration: none;
+  color: $light;
+}
+.fnt__12_26 {
+  font-size: 1.2rem;
+  line-height: 2.6rem;
+}
+.fnt__15 {
+  font-size: 1.5rem;
+  line-height: 1.8rem;
+  strong {
+    font-weight: 700;
+    line-height: 1.9rem;
+  }
+}
+.fnt__16_26 {
+  font-size: 1.6rem;
+  line-height: 2.6rem;
+}
+.fnt__18_26 {
+  font-size: 1.8rem;
+  line-height: 2.6rem;
+}
+.fnt__18_32 {
+  font-size: 1.8rem;
+  line-height: 3.2rem;
+}
+.fnt__18_30 {
+  font-size: 1.8rem;
+  line-height: 3rem;
+  font-weight: 700;
+}
+.fnt__20 {
+  font-size: 2rem;
+  line-height: 2.4rem;
+}
+.fnt__20_32 {
+  font-size: 2rem;
+  line-height: 3.4rem;
+  font-weight: 700;
+}
+.fnt__24_30 {
+  font-size: 2.4rem;
+  line-height: 3rem;
+  font-weight: 700;
+}
+
+.fnt__40 {
+  font-size: 3rem;
+  line-height: 3.9rem;
+  font-weight: 700;
+  @include breakpoint($md) {
+    font-size: 4rem;
+    line-height: 4.9rem;
+  }
+}

@@ -1,0 +1,18 @@
+$slick-font-path: '~slick-carousel/slick/fonts/';
+$slick-loader-path: '~slick-carousel/slick/';
+
+@import '~slick-carousel/slick/slick', '~slick-carousel/slick/slick-theme';
+
+@import 'reset';
+@import 'variables';
+@import 'typography';
+@import 'layout';
+@import 'base';
+@import './components/header';
+@import './components/footer';
+@import './components/hero';
+@import './components/copyWithImage';
+@import './components/slider';
+@import './components/icons';
+@import './components/logotypes';
+@import './components/contactForm';

@@ -1,0 +1,120 @@
+.header {
+  padding: 50px 0 50px;
+  &__socials {
+    align-items: flex-end;
+    justify-content: flex-end;
+
+    a {
+      margin: 0 10px 0 10px;
+      @include breakpoint($md) {
+        margin: 0 0 0 20px;
+      }
+    }
+    svg {
+      path,
+      rect {
+        transition: all 0.2s;
+      }
+      &:hover {
+        path,
+        rect {
+          fill: $blue; // or any color of your choice.
+        }
+      }
+    }
+  }
+  &__nav {
+    ul {
+      display: flex;
+      justify-content: space-between;
+      height: 100%;
+      align-items: center;
+
+      li {
+        text-align: center;
+
+        padding: 20px 0;
+        @include breakpoint($md) {
+          text-align: left;
+          padding: 0;
+        }
+
+        a {
+          transition: all 0.2s;
+        }
+        &:hover {
+          a {
+            color: $blue;
+          }
+        }
+      }
+    }
+  }
+  &__socials {
+  }
+}
+
+/* */
+
+ul#menu {
+  display: none;
+}
+.header__socials {
+  display: none;
+  text-align: center;
+}
+
+@include breakpoint($md) {
+  .hamburger-container {
+    display: none;
+  }
+
+  .nav ul#menu {
+    display: flex;
+  }
+  .header__socials {
+    display: flex !important;
+  }
+}
+
+ul.hamburger li {
+  height: 5px;
+  background: #fff;
+  content: '';
+  position: relative;
+  transition: 0.25s ease-in-out;
+  margin: 0;
+}
+
+.hidden {
+  opacity: 0;
+}
+
+.rot45deg {
+  transform: rotate(45deg);
+  top: 10px !important;
+}
+
+.rot-45deg {
+  transform: rotate(-45deg);
+}
+
+ul.hamburger {
+  display: block;
+}
+ul.hamburger li:nth-child(1) {
+  top: 0;
+}
+ul.hamburger li:nth-child(2) {
+  top: 5px;
+}
+ul.hamburger li:nth-child(3) {
+  top: 10px;
+}
+
+.hamburger-container {
+  width: 38px;
+  height: 30px;
+  cursor: pointer;
+  float: right;
+}

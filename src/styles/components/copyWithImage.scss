@@ -1,0 +1,122 @@
+.copyWithImage {
+  padding-bottom: 50px;
+  overflow: hidden;
+  @include breakpoint($md) {
+    padding-bottom: 180px;
+  }
+  figure {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    img {
+      max-width: 600px;
+      width: 100%;
+    }
+  }
+  .l__containerBleed__right {
+    background: transparent linear-gradient(220deg, #e4a000 0%, #e27900 100%) 0% 0% no-repeat
+      padding-box;
+    box-shadow: 0px 0px 20px #00000029;
+  }
+  .copyWithImage__header {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    padding: 20px;
+    @include breakpoint($md) {
+      padding: 0;
+      padding-top: 40px;
+      padding-left: 40px;
+      margin-bottom: 37px;
+    }
+    h2 {
+      margin-bottom: 16px;
+    }
+  }
+  .copyWithImage__copy {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    background: $darkGrey 0% 0% no-repeat padding-box;
+    box-shadow: 0px 0px 20px #00000029;
+
+    z-index: 2;
+
+    padding: 20px;
+    margin-bottom: 40px;
+    @include breakpoint($md) {
+      position: relative;
+      padding: 0;
+      left: -52px;
+      margin-bottom: -80px;
+      padding-top: 43px;
+      padding-left: 50px;
+      padding-bottom: 62px;
+    }
+    p {
+      margin-bottom: 43px;
+    }
+    &:after {
+      @include breakpoint($md) {
+        content: '';
+        background: $darkGrey;
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: -50px;
+        z-index: -1;
+      }
+    }
+  }
+
+  &.--bleedLeft {
+    figure {
+      grid-column-start: 1;
+      grid-column-end: 2;
+      img {
+        max-width: 600px;
+      }
+    }
+    .l__containerBleed__right {
+      background: transparent;
+      box-shadow: 0;
+    }
+    .l__containerBleed__left {
+      background: transparent linear-gradient(132deg, #e4a000 0%, #e27900 100%) 0% 0% no-repeat
+        padding-box;
+    }
+    .copyWithImage__header {
+      grid-column-start: 2;
+      grid-column-end: 3;
+    }
+    .copyWithImage__copy {
+      grid-column-start: 2;
+      grid-column-end: 3;
+      left: initial;
+      right: 0;
+
+      &:after {
+        @include breakpoint($md) {
+          content: '';
+          right: -40px;
+        }
+      }
+    }
+  }
+  &.--szkolenie {
+    figure {
+      img {
+        @include breakpoint($md) {
+          max-width: 666px;
+          margin-left: 67px;
+        }
+      }
+    }
+    .copyWithImage__header h2 {
+      margin-bottom: 2px;
+    }
+    .copyWithImage__copy {
+      padding-top: 60px;
+      padding-left: 50px;
+      padding-right: 12px;
+    }
+  }
+}

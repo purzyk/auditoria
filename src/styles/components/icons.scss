@@ -1,0 +1,17 @@
+.icons {
+  padding-bottom: 180px;
+  &__item {
+    background: #1d1c1c 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #00000029;
+    padding: 20px 22px 20px 22px;
+    margin-bottom: 18px;
+    figure {
+      min-width: 160px;
+    }
+    display: flex;
+    align-items: center;
+  }
+  &__title {
+    margin-bottom: 45px;
+  }
+}

@@ -1,0 +1,38 @@
+.hero {
+  padding-top: 40px;
+  .btn {
+    display: none;
+    @include breakpoint($md) {
+      display: inline-block;
+    }
+  }
+  @include breakpoint($md) {
+    padding-top: 170px;
+  }
+  h1 {
+    margin-bottom: 70px;
+  }
+  &__number {
+    @include breakpoint($md) {
+      position: relative;
+      top: -20px;
+    }
+  }
+  &__scroll {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    @include breakpoint($md) {
+      margin-top: 200px;
+      margin-bottom: 60px;
+    }
+    svg {
+      position: relative;
+      top: 0;
+      transition: 0.2s all;
+      &:hover {
+        top: 10px;
+      }
+    }
+  }
+}

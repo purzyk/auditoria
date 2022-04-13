@@ -1,0 +1,98 @@
+.l__container {
+  max-width: $lg;
+  margin: 0 auto;
+  padding: 0 2rem;
+  @include breakpoint($md) {
+    padding: 0 $marinSize;
+  }
+}
+
+.l__row {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-column-gap: $marinSize;
+  @include breakpoint($md) {
+    grid-template-columns: repeat(12, 1fr);
+  }
+}
+.l__containerBleed {
+  @include breakpoint($md) {
+    display: flex;
+  }
+}
+.l__containerBleed__left {
+  @include breakpoint($md) {
+    width: 50%;
+    padding-right: 8px;
+  }
+}
+.l__containerBleed__right {
+  @include breakpoint($md) {
+    width: 50%;
+    padding-left: 8px;
+  }
+}
+.l__containerBleed__left__wrap {
+  @include breakpoint($md) {
+    display: grid;
+    grid-template-columns: 1fr minmax(400px, 668px);
+  }
+}
+.l__containerBleed__right__wrap {
+  @include breakpoint($md) {
+    display: grid;
+    grid-template-columns: minmax(400px, 668px) 1fr;
+  }
+}
+.l__col2 {
+  grid-column: span 4;
+  @include breakpoint($md) {
+    grid-column: span 2;
+  }
+}
+.l__col3 {
+  grid-column: span 4;
+  @include breakpoint($md) {
+    grid-column: span 3;
+  }
+}
+.l__col4 {
+  grid-column: span 4;
+  @include breakpoint($md) {
+    grid-column: span 4;
+  }
+}
+
+.l__col6 {
+  grid-column: span 4;
+  @include breakpoint($md) {
+    grid-column: span 6;
+  }
+}
+
+.l__col8 {
+  grid-column: span 4;
+  @include breakpoint($md) {
+    grid-column: span 8;
+  }
+}
+
+.l__col10 {
+  grid-column: span 4;
+  @include breakpoint($md) {
+    grid-column: span 10;
+  }
+}
+
+.l__col12 {
+  grid-column: span 4;
+  @include breakpoint($md) {
+    grid-column: span 12;
+  }
+}
+
+.--last {
+  @include breakpoint($md) {
+    grid-column-end: 12;
+  }
+}

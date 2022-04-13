@@ -1,0 +1,30 @@
+.footer {
+  background-color: $darkGrey;
+  padding: 32px 0 40px;
+  &__contact {
+    text-align: center;
+    @include breakpoint($md) {
+      text-align: right;
+    }
+    a,
+    span {
+      color: $orange;
+    }
+  }
+  &__logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+    @include breakpoint($md) {
+      margin-bottom: 0;
+
+      justify-content: flex-start;
+    }
+    figure {
+      svg {
+        max-width: 144px;
+      }
+    }
+  }
+}
